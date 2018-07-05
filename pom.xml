@@ -252,8 +252,6 @@
   </dependencies>
 
   <build>
-    <finalName>mmall</finalName>
-    <pluginManagement>
       <plugins>
         <plugin>
           <groupId>org.mybatis.generator</groupId>
@@ -295,6 +293,5 @@
           </configuration>
         </plugin>
       </plugins>
-    </pluginManagement>
   </build>
 </project>
