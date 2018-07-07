@@ -20,7 +20,7 @@
                     </list>
                 </property>
             </bean>
-            <bean class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
+                <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
                 <property name="supportedMediaTypes">
                     <list>
                         <value>application/json;charset=UTF-8</value>
@@ -34,7 +34,7 @@
 
     <!-- 文件上传 -->
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-        <property name="maxUploadSize" value="10485760"/> <!-- 10m -->
+        <property name="maxUploadSize" value="104857600"/> <!-- 100m -->
         <property name="maxInMemorySize" value="4096" />
         <property name="defaultEncoding" value="UTF-8"></property>
     </bean>
